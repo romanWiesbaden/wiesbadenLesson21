@@ -38,7 +38,7 @@ public class PeopleController {
         // тут под ключем people будет лежать список из людей
         // динамический массив ArrayList из объектов класса Person
         model.addAttribute("people", personDAO.index());
-        return "/people/index";
+        return "people/index";
     }
 // метод будет принимать id в самом запросе
 

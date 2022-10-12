@@ -44,7 +44,9 @@
 <!--будем передавать id в адресе-->
 <!--}-->
 
-<a th:href="@{people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>
+<!--<a th:href="@{people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>-->
+
+<a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>
 </body>
 
 </html>
